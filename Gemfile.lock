@@ -18,4 +18,4 @@ PLATFORMS
 DEPENDENCIES
   rack
   sass
-  sprockets (~> 2.12.0)
+  sprockets

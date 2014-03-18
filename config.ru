@@ -3,7 +3,7 @@ require 'sprockets'
 require 'sass'
 
 sproket_environment = Sprockets::Environment.new
-sproket_environment.append_path 'app/assets/stylesheets'
+sproket_environment.append_path 'assets/stylesheets'
 sproket_environment.css_compressor = :scss
 
 map '/assets' do 

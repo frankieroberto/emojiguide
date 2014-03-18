@@ -1,5 +1,4 @@
 body {
-  background-color: gold; color: black;
   font-family: 'Helvetica Neue', 'Helvetica', sans-serif;
   font-size: 16px; 
   padding: 0;
@@ -11,13 +10,81 @@ h1 {
   font-weight: 40px;
 }
 
+p {
+  line-height: 1.5em;
+}
+
 @media (screen and min-width: 500px) {
   h1 { font-size: 100px; }
 }
 
 
-article {
-  max-width: 1000px;
-  margin: 0 auto;
+article header,
+article section {
   padding: 1rem;
 }
+
+article header h1,
+article header p,
+article section h2,
+article section p,
+article section .introduction {
+  max-width: 1000px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+
+article header {
+  margin: 0;
+  background-color: gold; color: black;
+}
+
+article section {
+  margin: 0;
+  background-color: whitesmoke;
+}
+
+article footer {
+  margin: 0;
+  padding: 1rem 0;
+  text-align: center;
+  background-color: whitesmoke;
+
+}
+
+article header p {
+  font-size: 2rem;
+  line-height: 2.5rem;
+}
+
+.isbn {
+  font-size: 1rem;
+  text-align: right;
+}
+
+.introduction p {
+  max-width: 450px;
+  margin-left: 0;
+}
+
+
+#emoji {
+  font-size: 3rem;
+  line-height: 4rem;
+  display: block;
+}
+
+#emoji-name {
+  font-size: 1rem;
+  line-height: 1.5rem;
+  font-weight: bold;
+  display: block;
+}
+
+#emoji-code {
+  font-size: 0.8rem;
+  color: grey;
+  display: block;
+}
+

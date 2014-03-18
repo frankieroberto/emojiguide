@@ -1,6 +1,7 @@
 
 require 'sprockets'
 require 'sass'
+require 'uglifier'
 
 sproket_environment = Sprockets::Environment.new
 sproket_environment.append_path 'assets/stylesheets'

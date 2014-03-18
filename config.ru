@@ -1,4 +1,4 @@
-
+# encoding: UTF-8
 require 'sprockets'
 require 'sass'
 require 'uglifier'

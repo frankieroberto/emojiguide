@@ -3,6 +3,8 @@ require 'sprockets'
 require 'sass'
 require 'uglifier'
 
+use Rack::Deflater
+
 sproket_environment = Sprockets::Environment.new
 sproket_environment.append_path 'assets/stylesheets'
 sproket_environment.append_path 'assets/javascripts'
@@ -17,7 +19,7 @@ use Rack::Static,
   :urls => ["/images", "/js", "/css", '/'],
   :root => "public",
   :index => 'index.html',
-  :header_rules => [[:all, {'Cache-Control' => 'public, max-age=1'}]]
+  :header_rules => [[:all, {'Cache-Control' => 'public, max-age=1800'}]]
 
-headers = {'Content-Type' => 'text/html', 'Content-Length' => '9'}
+headers = {'Content-Type' => 'text/html'}
 run lambda { |env| [404, headers, ['Not Found']] }

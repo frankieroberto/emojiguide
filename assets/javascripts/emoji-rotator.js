@@ -1,4 +1,3 @@
-
 var EMOJIS = [
   ['🍳','Fried egg', '1F373'],
   ['📵', 'No mobile phones', '1F4F5'],

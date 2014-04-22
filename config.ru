@@ -9,7 +9,7 @@ sproket_environment = Sprockets::Environment.new
 sproket_environment.append_path 'assets/stylesheets'
 sproket_environment.append_path 'assets/javascripts'
 sproket_environment.css_compressor = :scss
-sproket_environment.js_compressor  = :uglify
+# sproket_environment.js_compressor  = :uglify
 
 map '/assets' do 
   run sproket_environment
